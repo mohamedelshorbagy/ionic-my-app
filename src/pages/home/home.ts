@@ -11,7 +11,7 @@ export class HomePage {
 
   constructor(
     public navCtrl: NavController,
-    private all:AllProvider
+    private all: AllProvider
   ) {
 
   }
@@ -22,8 +22,15 @@ export class HomePage {
   //     console.log(res);
   //   })
   // }
- goToAbout() {
-   this.navCtrl.push(AboutPage);
- }
+  /*
+    [ Function Name ] : goToAbout()
+    [ Parameters ] : None
+    [ Functionality ] : - Move to the AboutPage ==> Stack Order
+    [ Returned Value ] : None
+  */
+
+  goToAbout() {
+    this.navCtrl.push(AboutPage);
+  }
 
 }

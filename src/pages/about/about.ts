@@ -18,6 +18,10 @@ export class AboutPage {
   ) {
   }
 
+  /*
+    = Life Cycle Hook:
+      - Called every time we instantiate the Page ==> Equals to ngOnInit in Angular
+  */
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');  
     this.all.getPosts().subscribe(res => {
